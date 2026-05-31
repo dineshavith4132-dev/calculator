@@ -12,6 +12,10 @@ function backspace(){
     let display = document.getElementById("result");
     display.value = display.value.slice(0,-1);
 }
+
+function toggleTheme(){
+    document.body.classList.toggle("light");
+}
 // Solve / Calculate the expression
 function solve() {
     let expression = document.getElementById("result").value;
